@@ -10,6 +10,8 @@ This project demonstrates the automated deployment and configuration of a self-h
 - **Identity & Secrets (Key Vault):** System-assigned Managed Identity for the VM to securely retrieve the Nextcloud Admin password from Azure Key Vault without hardcoded credentials.
 - **Monitoring:** Azure Monitor Alert Rules configured to track CPU spikes (>80%).
 - **Application Layer:** Nextcloud All-in-One (AIO) via Docker, Caddy Reverse Proxy, and automated SSL/TLS via Let's Encrypt (HTTP-01 challenge).
+- **Storage:** Azure Blob Storage (provisioned for scalable external data layer).
+
 
 ## 🚀 Deployment Automation (Azure CLI)
 Instead of manual portal configuration, the entire base infrastructure was deployed using a Bash script with Azure CLI to ensure reproducibility.
